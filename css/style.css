@@ -310,3 +310,164 @@ section#contact-area {
     margin-bottom: 30px;
     margin-top: 10px;
 }
+
+/* Nav CSS */
+.navbar-inverse {
+    background: rgba(22, 21, 21, 0.8);
+}
+
+.navbar-nav>li {
+    display: inline-block;
+    padding: 10px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    text-align: center;
+    color: rgba(68, 233, 68, 0.836);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+.navbar-inverse .navbar-nav > li > a.current,
+.navbar-inverse .navbar-nav > li > a:hover {
+        border-bottom: 2px solid white;
+        color: white;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* ---- Media Queries ---- */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .blog-content > p#blofr {
+        padding: 18px;
+    }
+    .contact-content p {
+        font-size: 15px;
+    }
+}
+/*    Tablet Layout  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .blog-content p {
+        margin-bottom: 21px;
+        padding: 27px;
+    }
+    .blog-content span {
+        margin-left: 0;
+    }
+    .service > p {font-size: 18px;}
+    .contact-content p {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    .navbar-nav > li {
+        padding: 6px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header {
+        height: 75vh;
+        padding: 0 15px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        align-items: center;
+            -ms-flex-align: center;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+    }
+    .header-content h1 {
+        font-size: 50px;
+    }
+    .feature-content {
+        max-width: 360px;
+        margin: 0 auto 30px;
+    }
+    .feature-content-title, .feature-content-description {
+        text-align: center;
+    }
+    .blog-content {margin-bottom: 30px;}
+    .blog-content p {text-align: center;}
+    .blog-content span {margin-left: 0;}
+    .testimonial-content p {text-align: center;}
+    .footer-content h4 {font-size: 16px;}
+    .navbar-nav>li {display: block;}
+    .navbar-inverse{
+        background: none;
+    }
+    .navbar-inverse .navbar-toggle {
+        background-color: #333;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {background-color: #49505f;}
+    .navbar .navbar-nav {
+        width: 100%;
+        margin: 0;
+    }
+    .navbar-collapse {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .navbar-nav>li {
+        width: 100%;
+        padding: 0px;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        background: none;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .navbar-inverse .navbar-nav > li > a { font-size: 16px; }
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .single-page-nav {
+    background-color: #383E4C;
+    max-height: 0;
+    -webkit-transition: max-height 0.8s;
+            transition: max-height 0.8s;
+    overflow: hidden;
+  }
+  .single-page-nav.show {
+    max-height: 250px;
+    overflow: auto;
+  }
+  .contact-form-left {
+    padding-right: 0;
+  }
+  .contact-form-right {
+    padding-left: 0;
+  }
+}
+
+/*    Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .header-content h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header { height: 50vh; }
+}
