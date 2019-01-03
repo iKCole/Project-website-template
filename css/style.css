@@ -106,6 +106,14 @@ header {
     /* color: white; */
     text-decoration: none;
 }
+.About {
+    padding: 10px;
+    margin: 0;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 24px;
+    text-shadow: 2px 2px #1b1b1b;
+}
 /* Blog CSS */
 #blog-area {
     margin: 60px 0px;
@@ -185,6 +193,10 @@ section#services-area {
     color: #fff;
     font-size: 18px;
 }
+.ourServices:hover {
+    text-decoration: none;
+    background: none;
+}
 /* Testimonial CSS */
 #testimonial-area {
     margin: 60px 0;
@@ -229,6 +241,20 @@ h2 {
 .fa-external-link-alt {
     padding: 10px;
 }
+.tm-box {
+    background-color: #F2F2F2;
+    max-width: 1140px;
+    width: 100%;
+  }
+  .tm-box-description {
+    padding: 30px;
+  }
+  .tm-box-p {
+    margin-bottom: 10px;
+  }
+  .tm-box-p:last-child {
+    margin-bottom: 0;
+  }
 /* Contact CSS */
 section#contact-area {
     background-image: url("../img/bg-3.jpg");
@@ -241,6 +267,9 @@ section#contact-area {
     text-transform: capitalize;
     margin-bottom: 20px;
     text-shadow: 2px 2px #333;
+}
+.contact-content h1 a {
+    text-decoration: none;
 }
 .contact-content p {
     background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
@@ -343,6 +372,28 @@ section#contact-area {
 .navbar .navbar-collapse {
     text-align: center;
 }
+
+
+/* Slick Nav CSS */
+.slicknav_menu {
+    display:none;
+}
+.slicknav_nav a {
+    text-transform: capitalize;
+}
+.slicknav_menu {
+  background: #40475a none repeat scroll 0 0;
+}
+/* Scrool To top */
+/* Image style */
+#scrollUp {
+    background-image: url("../img/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+/* End Scroll To top */
 
 /* ---- Media Queries ---- */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
